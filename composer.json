@@ -1,0 +1,50 @@
+{
+    "name": "tecdynamics/assets",
+    "description": "Laravel assets management",
+    "license": "MIT",
+    "keywords": [
+        "Tec",
+        "Tec cms",
+        "Tec platform",
+        "Tec assets"
+    ],
+    "homepage": "https://tecdynamics.co.uk",
+    "authors": [
+        {
+            "name": "Tec Dynamics LTD",
+            "email": "support@tecdynamics.co.uk"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3|^8.0",
+        "laravel/framework": "^5.6|^6|^7|^8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1|^7.0|^8.0",
+        "mockery/mockery": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tec\\Assets\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tec\\Assets\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tec\\Assets\\Providers\\AssetsServiceProvider"
+            ],
+            "aliases": {
+                "Assets": "Tec\\Assets\\Facades\\AssetsFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
