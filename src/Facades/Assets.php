@@ -2,13 +2,13 @@
 
 namespace Tec\Assets\Facades;
 
-use Tec\Assets\Assets;
 use Illuminate\Support\Facades\Facade;
+use Tec\Assets\Assets as AssetService;
 
-class AssetsFacade extends Facade
+class Assets extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return Assets::class;
+        return AssetService::class;
     }
 }
